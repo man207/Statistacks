@@ -1,0 +1,13 @@
+#pi, #coin
+{ display:none; }
+
+
+#screenerExit {
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+    transition: 0.3s;
+  }
+  
+#screenerExit:hover {
+    color: white;
+  }
