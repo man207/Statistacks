@@ -85,10 +85,18 @@ generatedata();
 var calc = document.getElementById("calc");
 
 calc.addEventListener( "click", e => {
+
     scatterChart.data.datasets[0].data = [];
     scatterChart.data.datasets[1].data = [];
     n = 0;
     m = $('#pointnum').val();
+
+    if (m > 2000) {
+        scatterChart.options.animation.duration = 0;
+    }
+    else {
+        scatterChart.options.animation.duration = 2000;
+    }
     for (let index = 0; index < m; index++) {
         x = Math.random();
         y = Math.random();
